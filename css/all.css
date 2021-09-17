@@ -1,0 +1,410 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap&family=Noto+Sans+TC:wght@100;300;500;700;900&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Sans+TC:wght@100;300;500;700;900&family=Pacifico&display=swap");
+body {
+  background-color: #9F5C4C;
+  font-family: "Noto Sans TC";
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 39.9px;
+  font-family: "Vidaloka";
+  color: white;
+  letter-spacing: .2rem;
+}
+
+p {
+  font-size: 12px;
+  font-family: "Noto Sans TC";
+  font-weight: 100;
+  color: white;
+  letter-spacing: .2rem;
+  line-height: 2rem;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  background-color: #e1d9d0;
+}
+
+header .container {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .nav li {
+  margin-left: 50px;
+  padding-bottom: 10px;
+}
+
+header .container .nav li .navHover {
+  color: #3E4A3C;
+  letter-spacing: 1rem;
+  text-align: justify;
+}
+
+header .container .nav li .navHover::before {
+  content: "當期新品";
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+header .container .nav li .navHover:active:before {
+  content: "New Arrival";
+  letter-spacing: 0;
+  font-family: "Pacifico";
+}
+
+header .container .nav li .navHover::after {
+  content: "";
+  height: 4px;
+  width: calc(100% - 1rem);
+  display: block;
+  background-color: #3E4A3C;
+  margin-top: 10px;
+}
+
+header .container .nav li .navHover:active:after {
+  width: 100%;
+}
+
+header .container .nav li .event::before {
+  content: "風格企劃";
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+header .container .nav li .event:active:before {
+  content: "Style planning";
+  letter-spacing: 0;
+  font-family: "Pacifico";
+}
+
+.main {
+  margin: 80px 0;
+}
+
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .mainPic {
+  width: 50%;
+}
+
+.main .mainInfo {
+  width: 45%;
+}
+
+.main .circlepic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .circlepic li {
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+}
+
+.main .circlepic .main1 {
+  background-image: url(../image/circle1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.main .circlepic .main2 {
+  background-image: url(../image/circle2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.main .circlepic .main3 {
+  background-image: url(../image/circle3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.main .circlepic .main4 {
+  background-image: url(../image/circle4.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.main .title {
+  margin: 30px 0;
+}
+
+.main .cw {
+  background-color: #3E4A3C;
+  color: #C3B4A1;
+  padding: 20px;
+  border-top: 1px solid #e1d9d0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main .cw:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.192);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.192);
+}
+
+.main .cw P {
+  margin: 20px 0;
+}
+
+.two {
+  background-color: #e1d9d0;
+  position: relative;
+}
+
+.two .container {
+  position: relative;
+}
+
+.two .container span {
+  position: absolute;
+  bottom: 156px;
+  right: -5%;
+}
+
+.two .container span img {
+  width: 80%;
+}
+
+.two .cardmain {
+  width: 30%;
+  margin: 160px 0;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #9F5C4C;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.two .cardmain:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.192);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.192);
+}
+
+.two .card2 {
+  background-color: #3E4A3C;
+}
+
+.two .cardPic {
+  border: 4px solid white;
+  margin: 20px 0;
+  height: 420px;
+  background-image: url(../image/pr3.jpg);
+  background-size: cover;
+}
+
+.two .cpic2 {
+  background-image: url(../image/pr4.jpg);
+  background-size: cover;
+}
+
+.two .cpic3 {
+  background-image: url(../image/pr2.jpg);
+  background-size: cover;
+}
+
+.thr {
+  padding: 80px;
+}
+
+.thr .container {
+  position: relative;
+  height: 750px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../image/pr1.jpg);
+  background-size: cover;
+  background-position: 20% 90%;
+}
+
+.thr .container .thrcard {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  width: 55%;
+  background-color: #3E4A3C;
+  border-top: 2px solid white;
+  padding: 20px;
+  text-align: center;
+}
+
+.thr .container .thrcw {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 19%;
+  right: -19%;
+}
+
+.thr .container .thrcw p {
+  letter-spacing: 1rem;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #3E4A3C;
+  position: relative;
+}
+
+footer .footerTitle {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+}
+
+footer .footerTitle img {
+  width: 100%;
+}
+
+.animate__fadeInRight {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 90%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .main .mainPic {
+    width: 60%;
+  }
+  .main .circlepic li {
+    width: 60px;
+    height: 60px;
+  }
+  .two .cardPic {
+    height: 300px;
+  }
+  .thr .container {
+    height: 400px;
+  }
+  .thr .container .thrcard {
+    right: -10%;
+    bottom: -20%;
+  }
+  .thr .container .thrcw {
+    right: 70%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  h1 {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .container {
+    height: 150px;
+    padding: 20px 0;
+  }
+  header .container .navHover {
+    padding: 10px 0;
+  }
+  header .container .navHover::before {
+    letter-spacing: .5rem;
+  }
+  .main .mainPic {
+    width: 100%;
+  }
+  .main .mainInfo {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .main .circlepic li {
+    width: 60px;
+    height: 60px;
+  }
+  .two .cardPic {
+    height: 300px;
+  }
+  .two .cardmain {
+    width: 80%;
+    margin: 20px 0;
+  }
+  .thr {
+    padding: 80px 20px;
+  }
+  .thr .container {
+    height: 500px;
+  }
+  .thr .container .container {
+    width: 110%;
+  }
+  .thr .container .thrcard {
+    width: 100%;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    bottom: -30%;
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=all.css.map */
