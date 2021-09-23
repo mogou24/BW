@@ -345,7 +345,7 @@ footer .footerTitle img {
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 600px) {
   h1 {
     font-size: 20px;
   }
